@@ -2,9 +2,7 @@
 title: "2019 CES Election:fully voted result analysis"
 author: "Feixue Han"
 date: "12/16/2020"
-output:
-  pdf_document: default
-  html_document: default
+output: pdf_document
 ---
 #abstract
 In main idea of the Canadian election survey is to show the main reasons for they way people vote for the candidates. According to this survey, it also invests the similarity and the difference of the voting in Canada and in other country. Furthermore, the result of the survey contributes to the science knowledge of the motivation of the voters and the meaning of the election. Moreover, the information of altitude and opinions of the Canadian citizens on social, economic, and political issues can be provided to public. 
@@ -226,7 +224,8 @@ dataset(include citation). We used multilevel regression and post-stratification
 Using a binary logistic model, we got two summary statistics tables and the probability of voting for
 the Canadian Election. The data for fully voted person was summarized in the first table. The education level, age and gender are also mentioned. 
 
-
-
-
-
+#discussion
+#weekness
+#reference
+#appendix
+#next step
