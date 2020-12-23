@@ -17,11 +17,11 @@ The 2019 CES data and ---- was chosen to investigate the result.  The result of 
 
 #data
 ```{r}
-install.packages("tidyverse")
-install.packages("devtools")
-install.packages("haven")
-devtools::install_github("hodgettsp/cesR")
-install.packages("visdat")
+#install.packages("tidyverse")
+#install.packages("devtools")
+#install.packages("haven")
+#devtools::install_github("hodgettsp/cesR")
+#install.packages("visdat")
 library(tidyverse)
 library(visdat)
 library(cesR)
@@ -190,11 +190,11 @@ unique(filtered_data_census$household_income)
 unique(filtered_data_survey$household_income)
 
 #Multi-level regression
-library(lme4)
-library(brms)
-library(tidybayes)
-library(caret)
-library(ROCR)
+#library(lme4)
+#library(brms)
+#library(tidybayes)
+#library(caret)
+#library(ROCR)
 
 model_logit1 <- glmer(vote_2020~(1+race+agegroup|cell)+gender+education+state+household_income,
                      data = survey.data, 
@@ -220,7 +220,7 @@ census.data.result$biden_votes<-ifelse(census.data.result$vote_2020_pred=="",cen
 
 #model
 The purpose of our study is to predict the vote outcome of the 2910 Canadian Election Survey in CES
-dataset(include citation). We used multilevel regression and post-stratification technique for this analysis. In the following sub-sections I will describe the model specifics and the calculation for the post-stratification process.
+dataset We used multilevel regression and post-stratification technique for this analysis. In the following sub-sections I will describe the model specifics and the calculation for the post-stratification process.
 
 #result
 Using a binary logistic model, we got two summary statistics tables and the probability of voting for
